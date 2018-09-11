@@ -1,0 +1,26 @@
+{
+    "name": "Nippy",
+    "version": "1.0",
+    "description": "SSO signing tool for plan choice",
+    "permissions": ["activeTab","declarativeContent","storage"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      },
+    "page_action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "images/nippy_launcher_48.png",
+            "32": "images/nippy_launcher_72.png",
+            "48": "images/nippy_launcher_96.png",
+            "128": "images/nippy_launcher_144.png"
+          }
+    },
+    "icons": {
+        "16": "images/nippy_launcher_48.png",
+        "32": "images/nippy_launcher_72.png",
+        "48": "images/nippy_launcher_96.png",
+        "128": "images/nippy_launcher_144.png"
+      },
+    "manifest_version": 2
+}

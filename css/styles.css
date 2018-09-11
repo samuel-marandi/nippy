@@ -1,0 +1,92 @@
+.nippy__root-container {
+    width: 500px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nippy__title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #18c5bf;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    flex: 1;
+}
+
+.nippy__title {
+    font-size: 2em;
+    font-weight: 700;
+    color: #fcf644;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.nippy__subtitle {
+    font-weight: 500;
+    font-size: 1em;
+    margin: 0;
+    color: #fff;
+}
+
+.nippy__form-container {
+    padding: 1em;
+    display: flex;
+    flex: 6;
+}
+
+.nippy__form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.nippy__field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nippy__environment-options-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nippy__label {
+    font-size: 1.35em;
+    font-weight: 700;
+}
+
+.nippy__input-field {
+    margin: 1em 0;
+    font-size: 1.25em;
+}
+
+.nippy__input-field:focus {
+    outline: none;
+}
+
+.nippy__submit-button {
+    font-size: 1.25em;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.50em 0;
+    background-color: #18c5bf;
+    
+}
+
+.nippy__submit-button:focus {
+    outline: none;
+}
+
+.nippy__submit-button:hover {
+    -webkit-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+}
