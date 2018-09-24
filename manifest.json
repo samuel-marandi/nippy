@@ -2,7 +2,7 @@
     "name": "Nippy",
     "version": "1.0",
     "description": "SSO signing tool for plan choice",
-    "permissions": ["activeTab","declarativeContent","storage"],
+    "permissions": ["activeTab","declarativeContent"],
     "background": {
         "scripts": ["background.js"],
         "persistent": false

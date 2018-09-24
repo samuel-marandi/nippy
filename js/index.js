@@ -1,10 +1,43 @@
 
 let button = document.getElementById('button-submit');
+let radioButtonDev = document.getElementsByName('environment')[1];
+let radioButtonLocal = document.getElementsByName('environment')[0];
+let destinationUrlInput = document.getElementById('destinationUrl');
+let radioButtonCustomURL = document.getElementsByName('environment')[2];
 
+
+/**
+ * Event handler for radio buttons
+ * @param {*} event 
+ */
+function handleRadioChange(event) {
+  if(radioButtonLocal.checked) {
+    destinationUrlInput.value = radioButtonLocal.value;
+  } else {
+    destinationUrlInput.value = radioButtonDev.value;
+  }
+}
+
+// function handleDestinationURLInputChange(event) {
+  
+//   let destination = destinationUrlInput.value;
+  
+//   if (destination.length === 0) {
+//     button.setAttribute('disabled', true);
+//   } else {
+//     button.setAttribute('disabled', false);
+//   }
+// }
+
+
+/**
+ * Event handler for submit button
+ * @param {*} event 
+ */
 function handleSubmitClick(event) {
   let form = document.createElement("form");
   let hiddenField = document.createElement('input');
-  let destination = document.getElementById('destinationUrl').value;
+  let destination = destinationUrlInput.value;
   let token = document.getElementById('token').value;
   let key = 'SAMLResponse';
   let method = 'post';
@@ -42,9 +75,12 @@ function handleSubmitClick(event) {
  
 }
 
-button.addEventListener('click', handleSubmitClick)
+button.addEventListener('click', handleSubmitClick);
+radioButtonDev.addEventListener('change', handleRadioChange);
+radioButtonLocal.addEventListener('change', handleRadioChange);
+radioButtonCustomURL.addEventListener('change', handleRadioChange);
 
-
+// destinationUrlInput.addEventListener('change', handleDestinationURLInputChange);
 
 // let changeColor = document.getElementById('changeColor');
 

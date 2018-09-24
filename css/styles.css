@@ -54,7 +54,11 @@
 
 .nippy__environment-options-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+.nippy__environment-options {
+    margin-right: 5em;
 }
 
 .nippy__label {
@@ -63,7 +67,7 @@
 }
 
 .nippy__input-field {
-    margin: 1em 0;
+    margin: .5em 0;
     font-size: 1.25em;
 }
 
@@ -89,4 +93,8 @@
     -webkit-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+}
+
+.nippy__preference-container {
+    margin: .5em 0 1em 0;
 }

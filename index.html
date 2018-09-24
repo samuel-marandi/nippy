@@ -8,54 +8,36 @@
           <p class="nippy__title">Nippy</p>
           <p class="nippy__subtitle">Hi there, I am Nippy!!!</p>
         </div>
-        <div class="nippy__form-container">          
+        <div class="nippy__form-container">
             <div id="sso-form" class="nippy__form" method="post">
-                <!-- <div class="nippy__field-container">
+              <div class="nippy__field-container">
                   <label class="nippy__label">Environment</label>
                   <div class="nippy__environment-options-container">
-                      <p>
+                      <p class="nippy__environment-options">
                           <label>
-                            <input name="environment" type="radio" checked />
+                            <input name="environment" type="radio" value="http://localhost:8083/planchoice/sso-login" checked/>
                             <span>Local</span>
                           </label>
                         </p>
-                        <p>
-                          <label>
-                            <input name="environment" type="radio" />
-                            <span>Dev</span>
-                          </label>
-                        </p>
-                        <p>
-                          <label>
-                            <input class="with-gap" name="environment" type="radio"  />
-                            <span>UAT</span>
-                          </label>
-                        </p>
-                        <p>
-                            <label>
-                              <input class="with-gap" name="environment" type="radio"  />
-                              <span>Prod</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                              <input class="with-gap" name="environment" type="radio" />
-                              <span>Custom URL</span>
-                            </label>
-                        </p>
+                      <p>
+                        <label>
+                          <input name="environment" type="radio" value="https://dev.ehealthreminders.net/planchoice/sso-login"/>
+                          <span>Dev</span>
+                        </label>
+                      </p>
                   </div>
-                </div> -->
-                <div class="nippy__field-container">
-                  <label class="nippy__label">Target URL</label>
-                  <input class="nippy__input-field" type="text" id="destinationUrl" placeholder="Enter the destination URL here" value="http://localhost:8083/planchoice/sso-login"/>
-                </div>
-                <div class="nippy__field-container">
-                    <label class="nippy__label">SSO Token</label>
-                    <textarea rows="20" cols="50" class="nippy__input-field" id="token" placeholder="Paste the token here"></textarea>
-                </div>
-                <div class="nippy__field-container">
-                  <button id="button-submit" class="nippy__submit-button">Submit</button>
-                </div>
+              </div>
+              <div class="nippy__field-container">
+                <label class="nippy__label">Target URL</label>
+                <input class="nippy__input-field" type="text" id="destinationUrl" placeholder="Enter the destination URL here" value="http://localhost:8083/planchoice/sso-login" />
+              </div>
+              <div class="nippy__field-container">
+                  <label class="nippy__label">SSO Token</label>
+                  <textarea rows="16" cols="50" class="nippy__input-field" id="token" placeholder="Paste the token here"></textarea>
+              </div>
+              <div class="nippy__field-container">
+                <button id="button-submit" class="nippy__submit-button">Submit</button>
+              </div>
             </div>
         </div>
       <script src="../js/index.js"></script>
